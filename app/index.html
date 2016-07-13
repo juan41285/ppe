@@ -54,8 +54,9 @@ III. Anatomía de una aplicación AngularJS.
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-        <div id="page-content-wrapper" ng-view>
-            
+        <div id="page-content-wrapper" >
+         <div ng-controller="MenuCtrl" ng-include="template.menu"></div>
+         <div ng-view></div>
         </div>
         <!-- /#page-content-wrapper -->
 
@@ -83,6 +84,8 @@ III. Anatomía de una aplicación AngularJS.
     <script src="/scripts/controllers.js"></script>
    
     <script src="/scripts/controllers/SidebarCtrl.js"></script>
+   
+    <script src="/scripts/controllers/MenuCtrl.js"></script>
    
     <script src="/scripts/app.js"></script>
    
