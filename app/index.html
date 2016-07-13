@@ -1,6 +1,7 @@
 <!doctype html>
-<html lang="es-ES" ng-app="wizard" >
+<html lang="es-ES" ng-app="ppe" >
   <head>
+  <base href="/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
    
@@ -42,78 +43,35 @@ III. Anatomía de una aplicación AngularJS.
  
   <body > 
   <div class="bg-header shadow-z-1">
-  <div class="container-fluid">
-      <div class="row">
-          <div class="col-md-4">
-              <h1 class="logo-texto"><strong class="p1">P</strong>lataforma <span class="sp-de">de</span> <strong class="p1">P</strong>lanificación</span></h1>
-          </div>
-      </div>
-  </div>
-  <hr class="hr-corta">
-    <div class="container-fluid">
-      <div class="row">
-         <div class="col-md-4">
-              <h1 class="logo-texto"> <strong class="str-est">Estratégica</strong></h1>
-          </div>
-      </div>
-  </div>
+
   </div>
   <div id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper" class="shadow-z-1">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+        <div ng-controller="SidebarCtrl" ng-include="template.sidebar">
+           
         </div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Simple Sidebar</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                    </div>
-                </div>
-            </div>
+        <div id="page-content-wrapper" ng-view>
+            
         </div>
         <!-- /#page-content-wrapper -->
 
     </div>
     <!-- /#wrapper -->
  
+  
+ 
     <!-- build:js js/vendor.min.js -->
     <!-- bower:js -->
     <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="lib/bootstrap-material-design/dist/js/material.js"></script>
     <script src="lib/bootstrap-material-design/dist/js/ripples.js"></script>
@@ -122,18 +80,11 @@ III. Anatomía de una aplicación AngularJS.
     <!-- build:js js/app.min.js -->
     <!-- inject:js -->
    
-    <!-- endinject --> 
-    <!-- endbuild -->   
-
-
-
-    
-  </body>
-</html>
-  
-    <!-- endbuild -->
-    <!-- build:js js/app.min.js -->
-    <!-- inject:js -->
+    <script src="/scripts/controllers.js"></script>
+   
+    <script src="/scripts/controllers/SidebarCtrl.js"></script>
+   
+    <script src="/scripts/app.js"></script>
    
     <!-- endinject --> 
     <!-- endbuild -->   
@@ -143,4 +94,3 @@ III. Anatomía de una aplicación AngularJS.
     
   </body>
 </html>
-  

@@ -94,24 +94,30 @@ gulp.task('inject', function() {
 });
 
 // Inyecta las librerias que instalemos vía Bower
-gulp.task('wiredep', function () {
+// gulp.task('wiredep', function () {
+//   gulp.src('./app/index.html')
+//     .pipe(wiredep({
+//       directory: './app/lib'
+//     }))
+//     .pipe(gulp.dest('./app'));
+// });
+
+gulp.task('wiredep1', function () {
   gulp.src('./app/index.html')
     .pipe(wiredep({
-      directory: './app/lib'
+     directory: './app/lib'
     }))
     .pipe(gulp.dest('./app'));
 });
-
-
 
 // Vigila cambios que se produzcan en el código
 // y lanza las tareas relacionadas
 gulp.task('watch', function() {
   gulp.watch(['./app/**/*.html', '/app/**/!index.html'], ['html']);
   gulp.watch(['./app/stylesheets/**/*.styl'], ['css', 'inject']);
-  gulp.watch(['./app/scripts/**/*.js', './Gulpfile.js'], ['inject']);
-  gulp.watch(['./bower.json'], ['wiredep']);
+  gulp.watch(['./app/scripts/**/*.js', './gulpfile.js'], ['inject']);
+  gulp.watch(['./bower.json'], ['wiredep1']);
 });
 
-gulp.task('default', ['server', 'inject', 'wiredep', 'watch','jshint','css']);
+gulp.task('default', ['server','wiredep1',  'inject', 'watch','jshint','css']);
 gulp.task('build', ['templates', 'compress', 'copy', 'inject','imagenes']);
