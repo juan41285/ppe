@@ -42,26 +42,9 @@ III. Anatomía de una aplicación AngularJS.
 
  
   <body > 
-  <div class="bg-header shadow-z-1">
-
-  </div>
-  <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div ng-controller="SidebarCtrl" ng-include="template.sidebar">
-           
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper" >
-         <div ng-controller="MenuCtrl" ng-include="template.menu"></div>
-         <div ng-view></div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
+   <div ng-controller="MenuCtrl" ng-include="template.menu"></div>
+  <div ng-view></div>
+ 
  
   
  

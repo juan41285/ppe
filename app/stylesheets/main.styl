@@ -1,6 +1,13 @@
 // font-family: 'Oswald', sans-serif;
 // font-family: 'Roboto Condensed', sans-serif;
 // font-family: 'Open Sans Condensed', sans-serif;
+//VAriavle de colores
+iniciado = #303F9F
+presupuesto = #E040FB
+proceso = #FFC107
+detenido = #FF5252
+finalizado = #8BC34A
+
  body 
   overflow-x: hidden
   background: #F2F6FA
@@ -21,8 +28,43 @@
     font-weight: 300
     // border-bottom:1px dotted #000
 
+.brand-img
+  // height: 65px;
+  margin-top: -15px;
 
-    
+.shadow-z-6
+  margin-top:-20px;   
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(199,199,199,1);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(199,199,199,1);
+  box-shadow: 0px 1px 1px 1px rgba(199,199,199,1);
+li.user-name
+  background: #3F51B5
+  padding:2px 
+
+.badge 
+  padding:5px !important
+  
+.estados 
+  margin:0 auto
+  padding:5px
+  // width:50%
+  border-left:1px dashed #f1f1f1
+ 
+  & h4 
+    text-align:left  
+  & a
+    color:#808080
+    font-size:0.8em    
+.iniciado 
+  background:iniciado !important
+.presupuesto 
+  background:presupuesto !important
+.proceso 
+  background:proceso !important
+.detenido 
+  background:detenido !important
+.finalizado 
+  background:finalizado !important
 /*!
  * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
  */
@@ -163,3 +205,39 @@
     text-decoration: none;
     color: #808080;
 }
+
+
+#custom-search-input {
+        margin:0;
+        // margin-top: 10px;
+        padding: 0;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+     
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        
+        
+       
+        color:#D9230F;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
