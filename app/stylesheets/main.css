@@ -62,6 +62,22 @@ li.user-name {
 .finalizado {
   background: #8bc34a !important;
 }
+.registro-actividad {
+  background: rgba(0,188,212,0.17);
+  padding: 4px;
+}
+.ra-h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 8px;
+  background: #00bcd4;
+  color: #fff;
+}
+.ra-item {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+}
 /*
  * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
  */
