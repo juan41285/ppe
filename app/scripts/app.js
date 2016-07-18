@@ -10,7 +10,7 @@
  
   function config ($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);
-
+    // $.material.init();
     $routeProvider
       .when('/', {
         templateUrl: 'templates/home.tpl.html',
@@ -36,6 +36,10 @@
         controller: 'InstitucionesCtrl',
         controllerAs: 'ins',
         activeMenu: 'instituciones'
+      })
+
+      .when('/auxiliar', {
+        templateUrl: 'templates/check.tpl.html'
       })
 
       .otherwise({ reditrectTo : "/" });

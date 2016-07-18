@@ -8,37 +8,46 @@
           	<input type="text" placeholder="Buscar institución autocompletado" class="form-control">
           </div>
           	<h4>Estado</h4>
-          	<div class="checkbox">
-	          <label>
-	            <input type="checkbox" checked="" > Todos
-	          </label>
-           </div>
-           <div class="checkbox">
-	          <label>
-	            <input type="checkbox"  > Iniciados
-	          </label>
-           </div>
-           <div class="checkbox">
-	          <label>
-	            <input type="checkbox" checked="" > Detenidos
-	          </label>
-           </div>
-           <div class="checkbox">
-	          <label>
-	            <input type="checkbox" checked="" > Finalizados
-	          </label>
-           </div>
-           <div class="checkbox">
-	          <label>
-	            <input type="checkbox"  > En proceso
-	          </label>
-           </div>
+            <div class="plan-estados">
+            <div class="toggle-button toggle-button--tuli">
+                <input id="todos" type="checkbox" checked="">
+                <label for="todos" >Todos</label>
+                <div class="toggle-button__icon"></div>
+            </div>
+                 <div class="toggle-button toggle-button--tuli">
+                <input id="iniciado" type="checkbox">
+                <label for="iniciado" >Iniciado</label>
+                <div class="toggle-button__icon"></div>
+            </div>
+                 <div class="toggle-button toggle-button--tuli">
+                <input id="Presupuesto" type="checkbox">
+                <label for="Presupuesto" >Presupuesto</label>
+                <div class="toggle-button__icon"></div>
+            </div>
+                 <div class="toggle-button toggle-button--tuli">
+                <input id="En proceso" type="checkbox">
+                <label for="En proceso" >En proceso</label>
+                <div class="toggle-button__icon"></div>
+            </div>
+                 <div class="toggle-button toggle-button--tuli">
+                <input id="Detenido" type="checkbox">
+                <label for="Detenido" >Detenido</label>
+                <div class="toggle-button__icon"></div>
+            </div>
+                 <div class="toggle-button toggle-button--tuli">
+                <input id="Finalizado" type="checkbox">
+                <label for="Finalizado" >Finalizado</label>
+                <div class="toggle-button__icon"></div>
+            </div>
+            </div>
+          
            	<h4>Ultima Actualizacion</h4>
-           	    <div class="checkbox">
-	          <label>
-	            <input type="checkbox" checked="" > Tres días
-	          </label>
-           </div>
+           	   <div class="checkbox">
+  <label>
+    <input type="checkbox" name="optionsCheckboxes">
+    Unchecked
+  </label>
+</div>
            <div class="checkbox">
 	          <label>
 	            <input type="checkbox" checked="" > una semana
