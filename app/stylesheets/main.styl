@@ -7,10 +7,21 @@ presupuesto = #E040FB
 proceso = #FFC107
 detenido = #FF5252
 finalizado = #8BC34A
+azul = #448AFF
+celeste = #03A9F4
+lima = #CDDC39
+rojo = #F44336
+morado =#7C4DFF
+verde = #8BC34A
+rosa = #E91E63
+gris = #607D8B
+cyan = #00BCD4
+
 
  body 
   overflow-x: hidden
-  background: #F2F6FA
+  background: #fafafa
+  font-size: 16px
 
 .bg-header
   background: #fff
@@ -65,6 +76,228 @@ li.user-name
   background:detenido !important
 .finalizado 
   background:finalizado !important
+
+.ra
+  background: #fff
+  padding: 10px
+ 
+  & a
+    text-decoration: none
+    color:#808080
+  
+/*Registro de actividades*/  
+.ra-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: #fff
+  color:cyan
+  border-bottom:1px solid cyan
+  
+  
+  
+.ra-item
+  background: #fff
+  margin:10px auto
+  border:1px solid #fff
+  color:#808080
+  border: 1px solid #f1f1f1
+  border-left: 3px solid cyan
+  padding-left:3px
+  
+  
+  
+  & h5
+    font-size: 0.8em
+    padding: 4px
+    margin: 0
+    padding-bottom:2px
+  & h6
+    font-size: 0.7em
+    padding: 4px
+    margin: 0
+    text-align: right
+ 
+  & span
+    font-size: 0.8em
+    padding: 10px
+    line-height: 1.1
+    background: #fafafa
+    display: block
+  
+  & i 
+    color:cyan  
+    
+/*sin actividad*/
+.sa
+  background: #fff
+  padding: 10px
+  margin-bottom:10px
+  
+
+  & a
+    text-decoration: none
+    color:#808080
+.sa-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: #fff
+  color:rojo
+  border-bottom:1px solid rojo
+  
+  
+.sa-item
+  background: #fff
+  margin:10px auto
+  border:1px solid #fff
+  color:#808080
+  
+  
+  & .fa
+    color:rojo
+    font-size: 4em
+    float:left
+    display: block
+    margin-right:10px
+
+  
+
+  & h5
+    font-size: 0.8em
+    padding: 4px
+    margin: 0
+    padding-bottom:2px
+ 
+
+
+   
+  & h6
+    font-size: 0.7em
+    padding: 4px
+    margin: 0
+    text-align: right
+    background: rojo
+    color:white
+  & p 
+    font-size: 0.9em
+    padding-left:1.5em
+      
+ 
+
+/*finalizad*/
+
+.fin
+  background: #fff
+  padding: 10px
+  margin-bottom:10px
+  
+
+  & a
+    text-decoration: none
+    color:#808080
+.fin-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: #fff
+  color:verde
+  border-bottom:1px solid verde
+  
+  
+.fin-item
+  background: #fff
+  margin:10px auto
+  border:1px solid #fff
+  color:#808080
+  
+  
+  & .fa
+    color:verde
+    font-size: 4em
+    float:left
+    display: block
+    margin-right:10px
+
+  
+
+  & h5
+    font-size: 0.8em
+    padding: 4px
+    margin: 0
+    padding-bottom:2px
+ 
+
+
+   
+  & h6
+    font-size: 0.7em
+    padding: 4px
+    margin: 0
+    text-align: right
+    background: verde
+    color:white
+  & p 
+    font-size: 0.9em
+    padding-left:1.5em
+
+/*ultimas*/
+
+.ultimas
+  background: #fff
+  padding: 10px
+  margin-bottom:10px
+  
+  & table 
+    font-size: 0.8em
+    
+    & tr > td
+      vertical-align: middle
+  & a
+    text-decoration: none
+    color:#808080
+.ultimas-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: gris
+  color:white
+  border-bottom:1px solid gris
+  margin-top:15px
+  
+  
+.ultimas-item
+  background: #fff
+  margin:10px auto
+  border:1px solid #fff
+  color:#808080
+  
+.btn-mini
+  padding: 4px 6px;
+  font-size: 10px;
+
+.td-estado
+  color: white
+  padding: 1px
+
+.filtros
+  padding: 10px
+  background: #fff
+  
+  & h4
+    padding: 5px
+    margin:0
+    color:gris
+    border-bottom:1px dashed #f1f1f1 
+
+.filtros-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: #fff
+  color:gris
+  border-bottom:1px solid gris 
+  margin-top:15px
 /*!
  * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
  */
@@ -72,7 +305,9 @@ li.user-name
 
 
 /* Toggle Styles */
-
+.shadow-z-0 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.12);
+}
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -241,3 +476,9 @@ li.user-name
     .search-query:focus + button {
         z-index: 3;   
     }
+  
+  
+  .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+    background-color: #ffc107;
+    border:1px solid #ffc107;
+}
