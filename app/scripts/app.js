@@ -3,7 +3,7 @@
 
   // /* @ngInject */
   angular
-    .module('ppe', ['ngRoute','ppe.controllers'])
+    .module('ppe', ['ngRoute','ppe.controllers','ppe.directives'])
     .config(config);
 
 
@@ -21,8 +21,7 @@
       .when('/planificacion', {
         templateUrl: 'templates/planificacion.tpl.html',
         controller: 'PlanificacionCtrl',
-        controllerAs: 'plan',
-        activeMenu: 'planificacion'
+        controllerAs: 'plan'
       })
     .when('/seguimiento', {
         templateUrl: 'templates/seguimiento.tpl.html',

@@ -1,46 +1,3 @@
-/*! =========================================================
- *
- * Material Kit Free - V1.1.0
- *
- * =========================================================
- *
- *
- *                       _oo0oo_
- *                      o8888888o
- *                      88" . "88
- *                      (| -_- |)
- *                      0\  =  /0
- *                    ___/`---'\___
- *                  .' \|     |// '.
- *                 / \|||  :  |||// \
- *                / _||||| -:- |||||- \
- *               |   | \\  -  /// |   |
- *               | \_|  ''\---/''  |_/ |
- *               \  .-\__  '-'  ___/-. /
- *             ___'. .'  /--.--\  `. .'___
- *          ."" '<  `.___\_<|>_/___.' >' "".
- *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
- *         \  \ `_.   \_ __\ /__ _/   .-` /  /
- *     =====`-.____`.___ \_____/___.-`___.-'=====
- *                       `=---='
- *
- *     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- *
- *               Buddha Bless:  "No Bugs"
- *
- * ========================================================= */
-/* ANIMATION */
-/* SHADOWS */
-/* Shadows (from mdl http://www.getmdl.io/) */
-body {
-  background-color: #CCCCCC;
-}
-body.inverse {
-  background: #333333;
-}
-body.inverse, body.inverse .form-control {
-  color: #ffffff;
-}
 body.inverse .modal,
 body.inverse .modal .form-control,
 body.inverse .panel-default,
@@ -2125,37 +2082,37 @@ legend {
   line-height: 1.42857;
 }
 .navbar, .navbar.navbar-default {
-  background-color: #9c27b0;
-  color: #ffffff;
+  background-color: #fff;
+  color: #333;
 }
 .navbar .navbar-form .form-group input.form-control::-moz-placeholder,
 .navbar .navbar-form input.form-control::-moz-placeholder, .navbar.navbar-default .navbar-form .form-group input.form-control::-moz-placeholder,
 .navbar.navbar-default .navbar-form input.form-control::-moz-placeholder {
-  color: #ffffff;
+  color: #333;
 }
 .navbar .navbar-form .form-group input.form-control:-ms-input-placeholder,
 .navbar .navbar-form input.form-control:-ms-input-placeholder, .navbar.navbar-default .navbar-form .form-group input.form-control:-ms-input-placeholder,
 .navbar.navbar-default .navbar-form input.form-control:-ms-input-placeholder {
-  color: #ffffff;
+  color: #333;
 }
 .navbar .navbar-form .form-group input.form-control::-webkit-input-placeholder,
 .navbar .navbar-form input.form-control::-webkit-input-placeholder, .navbar.navbar-default .navbar-form .form-group input.form-control::-webkit-input-placeholder,
 .navbar.navbar-default .navbar-form input.form-control::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #333;
 }
 .navbar .dropdown-menu, .navbar.navbar-default .dropdown-menu {
   border-radius: 3px !important;
 }
 .navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu li > a:focus, .navbar.navbar-default .dropdown-menu li > a:hover, .navbar.navbar-default .dropdown-menu li > a:focus {
-  color: #FFFFFF;
+  color: #fff;
   background-color: #9c27b0;
 }
 .navbar .dropdown-menu .active > a, .navbar.navbar-default .dropdown-menu .active > a {
   background-color: #9c27b0;
-  color: #ffffff;
+  color: #fff;
 }
 .navbar .dropdown-menu .active > a:hover, .navbar .dropdown-menu .active > a:focus, .navbar.navbar-default .dropdown-menu .active > a:hover, .navbar.navbar-default .dropdown-menu .active > a:focus {
-  color: #ffffff;
+  color: #fff;
 }
 .navbar.navbar-inverse {
   background-color: #3f51b5;

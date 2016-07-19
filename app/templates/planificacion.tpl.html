@@ -1,63 +1,34 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3">
-		 <h3 class="filtros-h3 shadow-z-1">Filtrar planificaciones</h3>
-          <div class="filtros shadow-z-1">
-          <h4>Insticución</h4>
+		 <h3 class="filtros-h3 shadow-z-0">Filtrar planificaciones</h3>
+          <div class="filtros shadow-z-0">
+         
           <div class="form-group">
-          	<input type="text" placeholder="Buscar institución autocompletado" class="form-control">
+          	<input type="text" placeholder="Buscar institución autocompletado" class="form-control" focus="true">
           </div>
           	<h4>Estado</h4>
-            <div class="plan-estados">
-            <div class="toggle-button toggle-button--tuli">
-                <input id="todos" type="checkbox" checked="">
-                <label for="todos" >Todos</label>
-                <div class="toggle-button__icon"></div>
-            </div>
-                 <div class="toggle-button toggle-button--tuli">
-                <input id="iniciado" type="checkbox">
-                <label for="iniciado" >Iniciado</label>
-                <div class="toggle-button__icon"></div>
-            </div>
-                 <div class="toggle-button toggle-button--tuli">
-                <input id="Presupuesto" type="checkbox">
-                <label for="Presupuesto" >Presupuesto</label>
-                <div class="toggle-button__icon"></div>
-            </div>
-                 <div class="toggle-button toggle-button--tuli">
-                <input id="En proceso" type="checkbox">
-                <label for="En proceso" >En proceso</label>
-                <div class="toggle-button__icon"></div>
-            </div>
-                 <div class="toggle-button toggle-button--tuli">
-                <input id="Detenido" type="checkbox">
-                <label for="Detenido" >Detenido</label>
-                <div class="toggle-button__icon"></div>
-            </div>
-                 <div class="toggle-button toggle-button--tuli">
-                <input id="Finalizado" type="checkbox">
-                <label for="Finalizado" >Finalizado</label>
-                <div class="toggle-button__icon"></div>
-            </div>
+            <div class="">
+            <div class="checkbox" ng-repeat="estado in estados">
+
+                <label>
+                    <input type="checkbox"  ng-model="estado.estado" ng-change="checkN(estado.id, estado.estado)" >
+                   {{estado.text}}
+                </label>
             </div>
           
-           	<h4>Ultima Actualizacion</h4>
-           	   <div class="checkbox">
-  <label>
-    <input type="checkbox" name="optionsCheckboxes">
-    Unchecked
-  </label>
-</div>
-           <div class="checkbox">
-	          <label>
-	            <input type="checkbox" checked="" > una semana
-	          </label>
-           </div>
-           <div class="checkbox">
-	          <label>
-	            <input type="checkbox"  > el mes pasado
-	          </label>
-           </div>
+
+
+       
+            </div>
+          
+           	<h4>Última Actualización</h4>
+             <div class="radio" ng-repeat="fecha in fechas">
+                <label>
+                    <input type="radio" name="fechas"  ng-model="fecha.estado" ng-change="checkN(fecha.id, fecha.estado)">
+                    {{fecha.text}}
+                </label>
+            </div>
           </div>
 		</div>
 		 <div class="col-md-9 col–sm–6">
