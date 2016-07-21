@@ -20,25 +20,24 @@ function focus ($timeout) {
 }; 
 /***********/
 
-function tooltip(){
+function toggle(){
     return {
-        restrict: 'A',
-        link: function(scope, element, attrs){
-            $(element).hover(function(){
-                // on mouseenter
-                $(element).tooltip('show');
-            }, function(){
-                // on mouseleave
-                $(element).tooltip('hide');
-            });
-        }
-    };
+    restrict: 'A',
+    link: function(scope, element, attrs){
+      if (attrs.toggle=="tooltip"){
+        $(element).tooltip();
+      }
+      if (attrs.toggle=="popover"){
+        $(element).popover();
+      }
+    }
+  };
 };
 /****************/
   angular
     .module('ppe.directives',['ngLocale'])
     .directive('focus',focus)
-    .directive('tooltip',tooltip);
+    .directive('toggle',toggle);
 
    
 })();

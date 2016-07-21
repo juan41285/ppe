@@ -78,6 +78,7 @@ li.user-name {
   background: #fff;
   color: #00bcd4;
   border-bottom: 1px solid #00bcd4;
+  margin-top: 15px;
 }
 .ra-item {
   background: #fff;
@@ -109,6 +110,56 @@ li.user-name {
 }
 .ra-item i {
   color: #00bcd4;
+}
+/*planificacion marcada*/
+.pm {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.pm a {
+  text-decoration: none;
+  color: #808080;
+}
+.pm-h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 8px;
+  background: #fff;
+  color: #512da8;
+  border-bottom: 1px solid #512da8;
+}
+.pm-item {
+  background: #fff;
+  margin: 10px auto;
+  border: 1px solid #fff;
+  color: #808080;
+}
+.pm-item .fa {
+  color: #512da8;
+  font-size: 4em;
+  float: left;
+  display: block;
+  margin-right: 10px;
+}
+.pm-item h5 {
+  font-size: 0.8em;
+  padding: 4px;
+  margin: 0;
+  padding-bottom: 2px;
+}
+.pm-item h6 {
+  font-size: 0.7em;
+  padding: 4px;
+  margin: 0;
+  text-align: right;
+  background: #512da8;
+  color: #fff;
+  margin-top: 20px;
+}
+.pm-item p {
+  font-size: 0.9em;
+  padding-left: 1.5em;
 }
 /*sin actividad*/
 .sa {
@@ -154,6 +205,7 @@ li.user-name {
   text-align: right;
   background: #f44336;
   color: #fff;
+  margin-top: 20px;
 }
 .sa-item p {
   font-size: 0.9em;
@@ -203,6 +255,7 @@ li.user-name {
   text-align: right;
   background: #8bc34a;
   color: #fff;
+  margin-top: 20px;
 }
 .fin-item p {
   font-size: 0.9em;
@@ -228,9 +281,9 @@ li.user-name {
   font-size: 18px;
   margin: 0;
   padding: 8px;
-  background: #607d8b;
-  color: #fff;
-  border-bottom: 1px solid #607d8b;
+  background: #fff;
+  color: #9c27b0;
+  border-bottom: 1px solid #9c27b0;
   margin-top: 15px;
 }
 .ultimas-item {
@@ -270,9 +323,60 @@ li.user-name {
   background: #607d8b;
   padding: 10px;
 }
-/*
- * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
- */
+/********Seguimiento**********/
+.seg-config {
+  background: #fff;
+  padding: 10px;
+}
+.seg-config p {
+  font-size: 0.8em;
+  line-height: 1.2;
+  background: #303f9f;
+  padding: 10px;
+  color: #fff;
+}
+.seg-config-h4 {
+  margin: 0;
+  color: #303f9f;
+  border-bottom: 1px solid #303f9f;
+  padding: 8px;
+  background: #fff;
+  font-size: 1em;
+}
+.seg-config-h5 {
+  margin: 0;
+  color: #303f9f;
+  border-bottom: 1px solid #303f9f;
+  background: #fff;
+  font-size: 0.9em;
+  padding-bottom: 8px;
+}
+.seg {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.seg table {
+  font-size: 0.8em;
+}
+.seg table tr > td {
+  vertical-align: middle;
+}
+.seg table tr > td strong {
+  color: #303f9f;
+}
+.seg a {
+  text-decoration: none;
+  color: #808080;
+}
+.seg-h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 8px;
+  background: #fff;
+  color: #9c27b0;
+  border-bottom: 1px solid #9c27b0;
+}
 /* Toggle Styles */
 .shadow-z-0 {
   box-shadow: 0 1px 4px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.12);

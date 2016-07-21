@@ -11,11 +11,13 @@ azul = #448AFF
 celeste = #03A9F4
 lima = #CDDC39
 rojo = #F44336
-morado =#7C4DFF
+morado =#512DA8
 verde = #8BC34A
 rosa = #E91E63
 gris = #607D8B
 cyan = #00BCD4
+detalle = #9c27b0
+naranja = #303F9F
 
 
 body 
@@ -93,6 +95,7 @@ li.user-name
   background: #fff
   color:cyan
   border-bottom:1px solid cyan
+  margin-top:15px
   
   
   
@@ -127,6 +130,62 @@ li.user-name
   
   & i 
     color:cyan  
+ /*planificacion marcada*/
+.pm
+  background: #fff
+  padding: 10px
+  margin-bottom:10px
+  
+
+  & a
+    text-decoration: none
+    color:#808080
+.pm-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: #fff
+  color:morado
+  border-bottom:1px solid morado
+  
+  
+.pm-item
+  background: #fff
+  margin:10px auto
+  border:1px solid #fff
+  color:#808080
+  
+  
+  & .fa
+    color:morado
+    font-size: 4em
+    float:left
+    display: block
+    margin-right:10px
+
+  
+
+  & h5
+    font-size: 0.8em
+    padding: 4px
+    margin: 0
+    padding-bottom:2px
+ 
+
+
+   
+  & h6
+    font-size: 0.7em
+    padding: 4px
+    margin: 0
+    text-align: right
+    background: morado
+    color:white
+    margin-top:20px
+  & p 
+    font-size: 0.9em
+    padding-left:1.5em
+      
     
 /*sin actividad*/
 .sa
@@ -179,6 +238,7 @@ li.user-name
     text-align: right
     background: rojo
     color:white
+    margin-top:20px
   & p 
     font-size: 0.9em
     padding-left:1.5em
@@ -237,6 +297,7 @@ li.user-name
     text-align: right
     background: verde
     color:white
+    margin-top:20px
   & p 
     font-size: 0.9em
     padding-left:1.5em
@@ -260,9 +321,9 @@ li.user-name
   font-size: 18px
   margin:0
   padding: 8px
-  background: gris
-  color:white
-  border-bottom:1px solid gris
+  background: white
+  color:detalle
+  border-bottom:1px solid detalle
   margin-top:15px
   
   
@@ -302,10 +363,59 @@ li.user-name
 .plan-estados
   background: gris
   padding: 10px
-/*!
- * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
- */
+  
 
+/********Seguimiento**********/
+.seg-config
+  background: #fff
+  padding: 10px
+  
+  & p 
+      font-size: 0.8em
+      line-height: 1.2
+      background: naranja
+      padding: 10px  
+      color:white
+
+.seg-config-h4
+  margin: 0
+  color:naranja
+  border-bottom:1px solid naranja
+  padding:8px
+  background: #fff
+  font-size: 1em
+
+.seg-config-h5
+  margin: 0
+  color:naranja
+  border-bottom:1px solid naranja
+  background: #fff
+  font-size: 0.9em
+  padding-bottom:8px
+
+.seg
+  background: #fff
+  padding: 10px
+  margin-bottom:10px 
+  & table 
+    font-size: 0.8em
+    
+    & tr > td
+      vertical-align: middle
+      
+      & strong
+        color:naranja
+  & a
+    text-decoration: none
+    color:#808080
+      
+.seg-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: white
+  color:detalle
+  border-bottom:1px solid detalle
 
 
 /* Toggle Styles */
