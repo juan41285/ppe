@@ -64,7 +64,20 @@
         <li ng-class="{active: $route.current.activeMenu == 'seguimiento'}" ><a href="/seguimiento">Seguimiento</a></li>
         <li ng-class="{active: $route.current.activeMenu == 'instituciones'}" ><a href="/instituciones">Instituciones</a></li>
          <li ng-class="{active: $route.current.activeMenu == 'estadisticas'}" ><a href="/estadisticas">Estadisticas</a></li>
-  
+    <li ng-class="{active: $route.current.activeMenu == 'admin'}" class="dropdown">
+              <a href="/admin" class="dropdown-toggle" data-toggle="dropdown">Administración <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+            <li><a href="#">Carga Fase 1</a></li>
+            <li><a href="#">Carga Fase 2</a></li>
+            <li><a href="#">Carga Fase 3</a></li>
+            <li><a href="#">Carga Fase 4</a></li>
+            <li><a href="#">Carga Fase 5</a></li>
+          
+            <li class="divider"></li>
+            <li><a href="#">Administrar Usuarios</a></li>
+         
+              </ul>
+            </li>
       </ul>
      
 

@@ -15,10 +15,16 @@
 
     $routeProvider
       .when('/', {
-        templateUrl: 'templates/home.tpl.html',
-        controller: 'HomeCtrl',
-        controllerAs: 'home',
-        activeMenu: '/'
+        templateUrl: 'templates/login.tpl.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
+      })
+    .when('/admin', {
+        templateUrl: 'templates/admin.tpl.html',
+        controller: 'AdminCtrl',
+        controllerAs: 'admin',
+        activeMenu: 'admin'
+
       })
       .when('/planificacion', {
         templateUrl: 'templates/planificacion.tpl.html',
