@@ -1,27 +1,64 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-		
-<ul class="nav nav-pills nav-pills-primary" role="tablist">
-	<li>
-		<a href="#dashboard" role="tab" data-toggle="tab">
-			
-			Dashboard
-		</a>
-	</li>
-	<li class="active">
-		<a href="#schedule" role="tab" data-toggle="tab">
-			
-			Schedule
-		</a>
-	</li>
-	<li>
-		<a href="#tasks" role="tab" data-toggle="tab">
-		
-			Tasks
-		</a>
-	</li>
-</ul> 
+
+	<button type="button" class="btn btn-fase-0" ng-click="isCollapsed = !isCollapsed">Fase 0</button>
+
+	<div uib-collapse="isCollapsed">
+		<div class="well well-lg">
+			<div class="row">
+				  <div class="col-md-2 dash-box">
+    						<a href="#" class="btn btn-fase-0-menu " role="button"  >
+								 <div class="fa fa-user-plus fa-3x"></div> 
+								<div id="box_2" class="icon-label">Administrar <br> Usuarios</div>
+								
+							</a>
+						</div>
+
+			<div class="col-md-2 dash-box">
+    						<a href="#" class="btn btn-fase-0-menu " role="button"  >
+								 <div class="fa fa-bookmark fa-3x"></div> 
+								<div id="box_2" class="icon-label"> Direcciones <br> Ministeriales</div>
+								
+							</a>
+						</div>
+
+			<div class="col-md-2 dash-box">
+    						<a href="#" class="btn btn-fase-0-menu " role="button"  >
+								 <div class="fa fa-list fa-3x"></div> 
+								<div id="box_2" class="icon-label"> Definir <br> Ejes</div>
+								
+							</a>
+						</div>
+
+			<div class="col-md-2 dash-box">
+    						<a href="#" class="btn btn-fase-0-menu " role="button"  >
+								 <div class="fa fa-object-ungroup fa-3x"></div> 
+								<div id="box_2" class="icon-label"> Objetivos <br> Estratégicos</div>
+								
+							</a>
+						</div>
+				<div class="col-md-2 dash-box">
+    						<a href="#" class="btn btn-fase-0-menu " role="button"  >
+								 <div class="fa fa-object-group fa-3x"></div> 
+								<div id="box_2" class="icon-label"> Objetivos <br> Operativos</div>
+								
+							</a>
+						</div>
+			</div>
+		</div>
+	</div>
+<button type="button" class="btn btn-default" ng-click="fase1 = !fase1">Toggle collapse Vertically</button>
+	<hr>
+	<div uib-collapse="fase1">
+		<div class="well well-lg"></div>
+	</div>
+	<button type="button" class="btn btn-default" ng-click="isCollapsedHorizontal = !isCollapsedHorizontal">Toggle collapse Horizontally</button>
+	<hr>
+	<div uib-collapse="isCollapsedHorizontal" horizontal>
+		<div class="well well-lg">Some content</div>
+	</div>
+
 		</div>
 	</div>
 </div>

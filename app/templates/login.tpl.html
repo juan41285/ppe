@@ -12,21 +12,17 @@
 									
 								</div>
 								<p class="text-divider"></p>
-								<div class="content">
+								<div class="content" style="padding:20px">
 
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons"></i>
-										</span>
-										<input type="text" class="form-control" placeholder="Ingrese su DNI">
+									<div class="form-group">
+										<label for="">DNI <small>(sin puntos)</small></label>
+										<input type="text" class="form-control" placeholder="Ingrese su DNI" name="dni" id="dni" ng-model="user.dni">
 									</div>
 
 									
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons"></i>
-										</span>
-										<input type="password" placeholder="Contraseña" class="form-control" />
+									<div class="form-group">
+										<label for="">Constraseña</label>
+										<input type="password" placeholder="Contraseña" class="form-control"  name="dni" id="dni" ng-model="user.pass"/>
 									</div>
 
 									<!-- If you want to add a checkbox to this form, uncomment this code
@@ -39,7 +35,7 @@
 									</div> -->
 								</div>
 								<div class="footer text-center">
-									<a href="/admin" class="btn btn-simple btn-primary btn-lg">Ingresar</a>
+									<a href="#" ng-click="ingresar(user.dni)" class="btn btn-simple btn-primary btn-lg">Ingresar</a>
 								</div>
 							</form>
 						</div>

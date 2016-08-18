@@ -377,6 +377,19 @@ li.user-name {
   color: #9c27b0;
   border-bottom: 1px solid #9c27b0;
 }
+/* admin menu */
+.btn-fase-0 {
+  background-color: #f44336;
+  color: #fff;
+}
+.btn-fase-0-menu {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+}
+.btn-fase-0-menu:hover {
+  background-color: #f44336;
+}
 /* Toggle Styles */
 .shadow-z-0 {
   box-shadow: 0 1px 4px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.12);
@@ -394,4 +407,200 @@ label {
   line-height: 1.42857;
   color: #333;
   font-weight: 400;
+}
+.form-group .form-control {
+  border: 1px solid #a7a7a7 !important;
+  background-image: none !important;
+  padding: 0px 7px !important;
+/* background-size: 0 2px,100% 1px; */
+/* background-repeat: no-repeat; */
+/* background-position: center bottom,center calc(100% - 1px); */
+/* background-color: transparent; */
+/* transition: background 0s ease-out; */
+/* float: none; */
+/* box-shadow: none; */
+/* border-radius: 0; */
+}
+.form-group {
+  position: relative;
+  margin: 15px 0 0;
+  padding-bottom: 7px;
+}
+fieldset {
+  margin: 0 0 30px !important;
+}
+fieldset legend {
+  padding: 5px 0 !important;
+  font-size: 18px !important;
+}
+label {
+  margin: 0;
+  font-weight: normal;
+}
+.strong {
+  font-weight: bold;
+}
+.form-group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.control-label {
+  display: block;
+  padding: 6px;
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #999;
+  background: rgba(0,0,0,0.014);
+}
+.control-label.control-label-sm {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 20px;
+  font-size: 11px;
+}
+.control-label.control-label-lg {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 26px;
+  font-size: 14px;
+}
+label .additional,
+.control-label .additional {
+  color: #999;
+}
+.form-control {
+  font-weight: normal;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+.form-control:focus {
+  border-color: #4fd0fb;
+}
+.help-block {
+  font-size: 12px;
+  margin: 2px 0 0;
+  color: #999;
+}
+.required-field {
+  display: inline;
+  font-size: 18px;
+  line-height: 12px;
+  color: #f45858;
+}
+/*
+  Horizontal form
+*/
+.form-horizontal .control-label {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+}
+.form-horizontal .has-feedback .form-control-feedback {
+  right: 0;
+}
+/*
+  Input with icons
+*/
+.form-control-feedback {
+  color: #ccc;
+}
+.has-feedback.has-left-icon .form-control {
+  padding-left: 42.5px;
+  padding-right: 12px;
+}
+.has-feedback.has-left-icon .form-control-feedback {
+  left: 0;
+  right: auto;
+}
+/*.has-success .form-control { border-color: #0ac964; }
+.has-success .form-control-feedback { color: #0ac964; }
+.has-warning .form-control { border-color: #c19716; }
+.has-warning .form-control-feedback { color: #c19716; }
+.has-error .form-control { border-color: #f45858; }
+.has-error .form-control-feedback { color: #f45858; }*/
+.box > .icon {
+  text-align: center;
+  position: relative;
+}
+.box > .icon > .image {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  width: 88px;
+  height: 88px;
+  border: 8px solid #fff;
+  line-height: 88px;
+  border-radius: 50%;
+  background: #63b76c;
+  vertical-align: middle;
+}
+.box > .icon:hover > .image {
+  background: #333;
+}
+.box > .icon > .image > i {
+  font-size: 36px !important;
+  color: #fff !important;
+}
+.box > .icon:hover > .image > i {
+  color: #fff !important;
+}
+.box > .icon > .info {
+  margin-top: -24px;
+  background: rgba(0,0,0,0.04);
+  border: 1px solid #e0e0e0;
+  padding: 15px 0 10px 0;
+}
+.box > .icon:hover > .info {
+  background: rgba(0,0,0,0.04);
+  border-color: #e0e0e0;
+  color: #fff;
+}
+.box > .icon > .info > h3.title {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+}
+.box > .icon > .info > p {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5em;
+  margin: 20px;
+}
+.box > .icon:hover > .info > h3.title,
+.box > .icon:hover > .info > p,
+.box > .icon:hover > .info > .more > a {
+  color: #222;
+}
+.box > .icon > .info > .more a {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 12px;
+  color: #222;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.box > .icon:hover > .info > .more > a {
+  color: #fff;
+  padding: 6px 8px;
+  background-color: #63b76c;
+}
+.box .space {
+  height: 30px;
+}
+.fa-3x {
+  padding: 10px;
+}
+.fa-3x:before {
+  font-size: 28px;
+  padding: 10px;
 }

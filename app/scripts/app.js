@@ -3,7 +3,7 @@
 
   // /* @ngInject */
   angular
-    .module('ppe', ['ngRoute','ppe.controllers','ppe.directives','ppe.templates'])
+    .module('ppe', ['ngRoute','ppe.controllers','ppe.directives','ppe.templates','ui.bootstrap','ngAnimate','ngTouch'])
     .config(config);
 
 
@@ -19,8 +19,8 @@
         controller: 'LoginCtrl',
         controllerAs: 'login'
       })
-    .when('/admin', {
-        templateUrl: 'templates/admin.tpl.html',
+    .when('/admin/', {
+        templateUrl: 'templates/admin/admin-home.tpl.html',
         controller: 'AdminCtrl',
         controllerAs: 'admin',
         activeMenu: 'admin'
