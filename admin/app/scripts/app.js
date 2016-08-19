@@ -3,7 +3,7 @@
 
   // /* @ngInject */
   angular
-    .module('ppe', ['ngRoute','ppe.controllers','ppe.directives','ppe.templates','ui.bootstrap','ngAnimate','ngTouch'])
+    .module('admin', ['ngRoute','admin.controllers','admin.directives','admin.templates','ui.bootstrap','ngAnimate','ngTouch'])
     .config(config);
 
 

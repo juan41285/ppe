@@ -3,7 +3,7 @@
 
 
    angular
-    .module('ppe.controllers')
+    .module('admin.controllers')
     .controller('MenuCtrl', MenuCtrl);
 
 
