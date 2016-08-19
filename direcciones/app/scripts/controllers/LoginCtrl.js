@@ -13,10 +13,10 @@
    $scope.ingresar = function(user){
    	console.log(user);
    	if(user === '12345678'){
-   		$window.location.href = 'http://localhost:8081';
+   		$location.path('/admin/');
    	}
    	if(user === '87654321'){
-   		$window.location.href = 'http://localhost:8082';
+   		$location.path('/direcciones/');
    	}
    }
     

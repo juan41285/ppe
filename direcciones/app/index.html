@@ -59,6 +59,7 @@ III. Anatomía de una aplicación AngularJS.
 
  
   <body > 
+   <div ng-controller="MenuCtrl" ng-include="template.menu" ng-show="menuToggle"></div>
   <div ng-view></div>
  
  
@@ -81,6 +82,9 @@ III. Anatomía de una aplicación AngularJS.
     <!-- build:js js/app.min.js -->
     <!-- inject:js -->
     <script src="/scripts/controllers.js"></script>
+    <script src="/scripts/controllers/admin/AdminPlanificacionCtrl.js"></script>
+    <script src="/scripts/controllers/admin/AdminMenuCtrl.js"></script>
+    <script src="/scripts/controllers/admin/AdminCtrl.js"></script>
     <script src="/scripts/controllers/SidebarCtrl.js"></script>
     <script src="/scripts/controllers/PlanificacionCtrl.js"></script>
     <script src="/scripts/controllers/MenuCtrl.js"></script>
