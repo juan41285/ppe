@@ -1,5 +1,5 @@
 (function(){
 	'use strict';
 	angular
-	 .module('admin.controllers', []);
+	 .module('admin.controllers', ['admin.services']);
 })();

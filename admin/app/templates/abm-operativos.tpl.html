@@ -1,38 +1,40 @@
 <div class="col-md-4">
-	<h3 class="dm-h3 shadow-z-0">Agregar Dirección Ministerial</h3>
+	<h3 class="dm-h3 shadow-z-0">Agregar Objetivo Estratégico</h3>
 
 	<div class="shadow-z-0 admin-content-form">
 	
 		<form class="row" ng-submit="guardarDireccion()">
 			<div class="form-group col-md-12">
-				<label for="direccion-nombre">Nombre de la Dirección</label>
+				<label for="direccion-nombre">Nombre del Objetivo</label>
 				<input type="text" name="direccion" ng-model="direccion.nombre" class="form-control" required>
 			</div>
 			<div class="form-group col-md-12">
-				<label for="direccion-nombre">E-mail de la Dirección</label>
-				<input type="email" name="dirmail" ng-model="direccion.correo" class="form-control" required>
+				<label for="direccion-nombre">Descripción</label>
+				<textarea name="desc-ejes" id="" cols="30" rows="3" class="form-control"></textarea>
 			</div>
-			<small class="col-md-12">
-			<strong>Datos del Responsable</strong>
-			
-			</small>
-			<div class="form-group col-md-7">
-				<label for="direccion-nombre">DNI <small>(sin puntos)</small></label>
-				<input type="text" name="dni" ng-model="direccion.responsable.dni" class="form-control" required>
-			</div>
-			<div class="form-group col-md-6">
-				<label for="direccion-nombre">Apellido</label>
-				<input type="text" name="apellido" ng-model="direccion.responsable.apellido" class="form-control" required>
-			</div>
-			<div class="form-group col-md-6">
-				<label for="direccion-nombre">Nombres</label>
-				<input type="text" name="nombre" ng-model="direccion.responsable.nombre" class="form-control" required>
-			</div>
-			
 			<div class="form-group col-md-12">
-				<label for="direccion-nombre">Email</label>
-				<input type="email" name="correo" ng-model="direccion.responsable.correo" class="form-control" required>
-			</div>
+            <hr>
+            <label for="direccion-nombre">Objetivo Estratégico al que pertenece</label>
+            <input type="text" name="direccion" ng-model="direccion.nombre" class="form-control" required>
+            </div>
+            <div >
+       <div class="form-group col-md-12">
+           <hr>
+       </div>
+            <div class="form-group col-md-6">
+            <label for="">Fecha Limite</label>
+            <input type="date" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+            <label for="">Indicadores</label>
+            <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-12">
+            <label for="">Metas</label>
+           <textarea name="desc-ejes" id="" cols="30" rows="2" class="form-control"></textarea>
+                    </div>
+                </div>
+            
 			<div class="clearfix col-md-12">
 			<hr>
 				<button class="btn btn-danger pull-right"  type="submit">Guardar</button>
@@ -45,18 +47,18 @@
 </div>
 
 <div class="col-md-8">
-<h3 class="dm-h3 shadow-z-0">Listado de Direcciones Agregadas</h3>
+<h3 class="dm-h3 shadow-z-0">Listado de Objetivos Operativos</h3>
 
 	<div class="shadow-z-0 admin-content-form">
 	 <table class="table table-responsive table-condensed table-striped">
                         <tr>
-                        	<th>Dirección</th>
-                        	<th>Responsable</th>
+                        	<th>Objetivo</th>
+                        	
                         	<th class="td-actions text-right">Opciones</th>
                         </tr>
                         <tr>
-                        	<td>Dirección de nivel Secundario</td>
-                        	<td>Luis Santillan</td>
+                        	<td>Objetivo #1</td>
+                        	
                         	<td class="td-actions text-right">
                 
                 <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
@@ -68,10 +70,10 @@
                         	</td>
                         </tr>
                         <tr>
-                        	<td>Dirección de nivel Secundario</td>
-                        	<td>Luis Santillan</td>
+                        	<td>Objetivo #2</td>
+                        
                         	<td class="td-actions text-right">
-                
+          
                 <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
                     <i class="fa fa-edit"></i>
                 </button>

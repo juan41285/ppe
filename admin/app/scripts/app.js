@@ -3,7 +3,7 @@
 
   // /* @ngInject */
   angular
-    .module('admin', ['ngRoute','admin.controllers','admin.directives','admin.templates','ui.bootstrap','ngAnimate','ngTouch'])
+    .module('admin', ['ngRoute','admin.controllers','admin.directives','admin.services','admin.templates','ui.bootstrap','ngAnimate','ngTouch'])
     .config(config);
 
 
