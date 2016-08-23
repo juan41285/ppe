@@ -3,7 +3,7 @@
 
   // /* @ngInject */
   angular
-    .module('ppe', ['ngRoute','ppe.controllers','ppe.directives','ppe.templates','ui.bootstrap','ngAnimate','ngTouch'])
+    .module('dm', ['ngRoute','dm.controllers','dm.directives','dm.templates','ui.bootstrap','ngAnimate','ngTouch'])
     .config(config);
 
 
@@ -15,44 +15,12 @@
 
     $routeProvider
       .when('/', {
-        templateUrl: 'templates/login.tpl.html',
-        controller: 'LoginCtrl',
-        controllerAs: 'login'
+        templateUrl: 'templates/home.tpl.html',
+        controller: 'HomeCtrl',
+        controllerAs: 'home',
+        activeMenu:'/'
       })
-    .when('/admin/', {
-        templateUrl: 'templates/admin/admin-home.tpl.html',
-        controller: 'AdminCtrl',
-        controllerAs: 'admin',
-        activeMenu: 'admin'
-
-      })
-      .when('/planificacion', {
-        templateUrl: 'templates/planificacion.tpl.html',
-        controller: 'PlanificacionCtrl',
-        controllerAs: 'plan',
-        activeMenu: 'planificacion'
-      })
-    .when('/seguimiento', {
-        templateUrl: 'templates/seguimiento.tpl.html',
-        controller: 'SeguimientoCtrl',
-        controllerAs: 'seg',
-        activeMenu: 'seguimiento'
-      })
-
-      .when('/instituciones', {
-        templateUrl: 'templates/instituciones.tpl.html',
-        controller: 'InstitucionesCtrl',
-        controllerAs: 'ins',
-        activeMenu: 'instituciones'
-      })
-       .when('/estadisticas', {
-        templateUrl: 'templates/estadisticas.tpl.html',
-        activeMenu: 'estadisticas'
-      })
-
-      .when('/auxiliar', {
-        templateUrl: 'templates/check.tpl.html'
-      })
+    
 
       .otherwise({ reditrectTo : "/" });
   }

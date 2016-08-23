@@ -35,7 +35,7 @@ function toggle(){
 };
 /****************/
   angular
-    .module('ppe.directives',['ngLocale'])
+    .module('dm.directives',['ngLocale'])
     .directive('focus',focus)
     .directive('toggle',toggle);
 

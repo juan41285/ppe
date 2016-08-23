@@ -118,7 +118,7 @@ gulp.task('templates', function() {
   gulp.src('./app/templates/**/*.tpl.html')
     .pipe(templateCache({
       root: 'templates/',
-      module: 'ppe.templates',
+      module: 'dm.templates',
       standalone: true
     }))
     .pipe(gulp.dest('./app/scripts'));

@@ -13,7 +13,8 @@
    $scope.ingresar = function(user){
    	console.log(user);
    	if(user === '12345678'){
-   		$window.location.href = 'http://localhost:8081';
+      // $window.location.href = 'http://localhost:8081';
+   		$window.location.href = 'http://ppeadmin.innovacioneducativa.gob.ar/';
    	}
    	if(user === '87654321'){
    		$window.location.href = 'http://localhost:8082';

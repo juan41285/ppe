@@ -3,7 +3,7 @@
 
 
    angular
-    .module('ppe.controllers')
+    .module('dm.controllers')
     .controller('PlanificacionCtrl', PlanificacionCtrl);
 
 

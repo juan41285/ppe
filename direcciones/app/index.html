@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es-ES" ng-app="ppe" >
+<html lang="es-ES" ng-app="dm" >
   <head>
   <base href="/">
     <meta charset="utf-8">
@@ -59,7 +59,7 @@ III. Anatomía de una aplicación AngularJS.
 
  
   <body > 
-   <div ng-controller="MenuCtrl" ng-include="template.menu" ng-show="menuToggle"></div>
+   <div ng-controller="MenuCtrl" ng-include="template.menu" ></div>
   <div ng-view></div>
  
  
@@ -82,14 +82,11 @@ III. Anatomía de una aplicación AngularJS.
     <!-- build:js js/app.min.js -->
     <!-- inject:js -->
     <script src="/scripts/controllers.js"></script>
-    <script src="/scripts/controllers/admin/AdminPlanificacionCtrl.js"></script>
-    <script src="/scripts/controllers/admin/AdminMenuCtrl.js"></script>
-    <script src="/scripts/controllers/admin/AdminCtrl.js"></script>
     <script src="/scripts/controllers/SidebarCtrl.js"></script>
     <script src="/scripts/controllers/PlanificacionCtrl.js"></script>
     <script src="/scripts/controllers/MenuCtrl.js"></script>
     <script src="/scripts/controllers/LoginCtrl.js"></script>
-    <script src="/scripts/controllers/AdminCtrl.js"></script>
+    <script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/templates.js"></script>
     <script src="/scripts/nouislider.min.js"></script>
     <script src="/scripts/material.min.js"></script>
