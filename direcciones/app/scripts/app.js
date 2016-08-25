@@ -20,7 +20,12 @@
         controllerAs: 'home',
         activeMenu:'/'
       })
-    
+    .when('/admin', {
+        templateUrl: 'templates/admin.tpl.html',
+        controller: 'AdminCtrl',
+        controllerAs: 'admin',
+        activeMenu:'admin'
+      })
 
       .otherwise({ reditrectTo : "/" });
   }
