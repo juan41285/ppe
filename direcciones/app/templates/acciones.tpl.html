@@ -1,0 +1,252 @@
+<div class="col-md-4">
+	<h3 class="dm-h3 shadow-z-0">Agregar Accion</h3>
+
+	<div class="shadow-z-0 admin-content-form">
+	
+		<form class="row" ng-submit="guardarDireccion()">
+			<div class="form-group col-md-12">
+				<label for="direccion-nombre">Nombre de la Acción</label>
+				<input type="text" name="direccion" ng-model="direccion.nombre" class="form-control" required>
+			</div>
+			
+			<div class="form-group col-md-6">
+            <label for="direccion-nombre">Fecha de Inicio</label>
+            <input type="date" name="direccion" ng-model="direccion.nombre" class="form-control" required>
+            </div>
+
+            <div class="form-group col-md-6">
+            <label for="direccion-nombre">Fecha de Fin</label>
+            <input type="date" name="direccion" ng-model="direccion.nombre" class="form-control" required>
+            </div>
+            <div >
+       <div class="form-group col-md-12">
+           <hr>
+       </div>
+       <div class="form-group col-md-12">
+                <label for="direccion-nombre">Prioridad</label>
+                <select name="" id="" class="form-control" required>
+                    <option value="">Seleccione</option>
+                    <option value="alta">Alta</option>
+                    <option value="normal">Normal</option>
+                    <option value="baja">Baja</option>
+                </select>
+       </div>                
+        <div class="form-group col-md-12">
+                <label for="direccion-nombre">Responsables</label>
+                <div class="input-group">
+      <input type="text" class="form-control" placeholder="Seleccione con autcompletar...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Agregar</button>
+      </span>
+    </div><!-- /input-group -->
+            </div>
+            <div class="form-group col-md-12">
+                <label for="direccion-nombre">Estado</label>
+             
+      <input type="text" class="form-control" placeholder="">
+      
+    </div><!-- /input-group -->
+
+    <div class="form-group col-md-12">
+                <label for="direccion-nombre">Detalle</label>
+             
+      <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+      
+    </div><!-- /input-group -->
+            </div>
+                
+            
+			<div class="clearfix col-md-12">
+			<hr>
+				<button class="btn btn-danger pull-right"  type="submit">Guardar</button>
+			</div>
+		</form>
+
+
+
+	</div>
+</div>
+
+<div class="col-md-4">
+<h3 class="dm-h3 shadow-z-0">Listado de de Acciones Agregados</h3>
+
+	<div class="shadow-z-0 admin-content-form">
+	 <table class="table table-responsive table-condensed table-striped">
+                        <tr>
+                        	<th>Acción</th>
+                        	
+                        	<th class="td-actions text-right">Detalle</th>
+                        </tr>
+                        <tr class="danger ">
+                        	<td class="active" >Acción #1</td>
+                        	
+                        	<td class="td-actions text-right">
+                
+                <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button>
+               
+                        	</td>
+                        </tr>
+                        <tr>
+                        	<td>Acción #2</td>
+                        
+                        	<td class="td-actions text-right">
+          
+                <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button>
+              
+                        	</td>
+                        </tr>
+    </table>
+	</div>
+	
+</div>  
+
+<div class="col-md-4">
+    <h3 class="dm-h3 shadow-z-0">Detalle Accion #1</h3>
+
+    <div class="shadow-z-0 admin-content-form">
+    <table class="table table-responsive table-condensed table-striped">
+                        <tr>
+                            <td>Fecha de inicio</td>
+                            
+                            <td class="td-actions text-right">12/05/2017</td>
+                            <td class="td-actions text-right">  <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button></td>
+                        </tr>
+
+                                  <tr>
+                            <td>Fecha de Fin</td>
+                            
+                            <td class="td-actions text-right">Sin asignar</td>
+                            <td class="td-actions text-right">  <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button></td>
+                        </tr>
+                            <tr>
+                            <td>Prioridad</td>
+                            
+                            <td class="td-actions text-right">Baja</td>
+                            <td class="td-actions text-right">  <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button></td>
+                        </tr>
+                        <tr>
+                            <td>Responsables</td>
+                            
+                            <td class="td-actions text-right">Pablo Agüero</td>
+                            <td class="td-actions text-right">  <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button></td>
+
+                        </tr>
+
+                                 <tr>
+                            <td>Estado</td>
+                            
+                            <td class="td-actions text-right">Terminado</td>
+                            <td class="td-actions text-right">  <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button></td>
+
+                        </tr>
+                        
+    </table>
+<hr>
+<h4>Detalles</h4>
+  
+    <div class="qa-message-list" id="wallmessages">
+                    <div class="message-item" id="m16">
+                        <div class="message-inner">
+                            <div class="message-head clearfix">
+                                <div class="avatar pull-left"><a href="./index.php?qa=user&qa_1=Oleg+Kolesnichenko"><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a></div>
+                                <div class="user-detail">
+                                    <h5 class="handle">Primeros pasos</h5>
+                                    <div class="post-meta">
+                                        <div class="asker-meta">
+                                            <span class="qa-message-what"></span>
+                                            <span class="qa-message-when">
+                                                <span class="qa-message-when-data">Lunes 21</span>
+                                            </span>
+                                            <span class="qa-message-who">
+                                                <span class="qa-message-who-pad">Por </span>
+                                                <span class="qa-message-who-data"><a href="">Juan Santillan</a></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qa-message-content">
+                                Yo!
+                            </div>
+                    </div></div>
+                    
+                    <div class="message-item" id="m9">
+                        <div class="message-inner">
+                            <div class="message-head clearfix">
+                                <div class="avatar pull-left"><a href=""><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a></div>
+                                <div class="user-detail">
+                                    <h5 class="handle">Nuevos avances</h5>
+                                    <div class="post-meta">
+                                        <div class="asker-meta">
+                                            <span class="qa-message-what"></span>
+                                            <span class="qa-message-when">
+                                                <span class="qa-message-when-data">Sept 24, 2018</span>
+                                            </span>
+                                            <span class="qa-message-who">
+                                                <span class="qa-message-who-pad">por </span>
+                                                <span class="qa-message-who-data"><a href="">Pablo Agüero</a></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qa-message-content">
+                                Se concluyo la etapa de concientizacion
+                            </div>
+                    </div></div>
+                    
+                    <div class="message-item" id="m7">
+                        <div class="message-inner">
+                            <div class="message-head clearfix">
+                                <div class="avatar pull-left"><a href="./index.php?qa=user&qa_1=russell"><img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"></a></div>
+                                <div class="user-detail">
+                                    <h5 class="handle">Compra de insumos</h5>
+                                    <div class="post-meta">
+                                        <div class="asker-meta">
+                                            <span class="qa-message-what"></span>
+                                            <span class="qa-message-when">
+                                                <span class="qa-message-when-data">Oct 25, 2018</span>
+                                            </span>
+                                            <span class="qa-message-who">
+                                                <span class="qa-message-who-pad">por </span>
+                                                <span class="qa-message-who-data"><a href="">Juan Santillan</a></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qa-message-content">
+                                Se concreto la compra de insumos
+                            </div>
+                    </div></div>
+                    
+        
+                    
+                </div>
+        <form class="row" ng-submit="guardarDireccion()">
+        <div class="form-group col-md-12">
+       <label for="">Agregar Detalle de avance</label>
+            <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+        
+                <button class="btn btn-danger pull-right"  type="submit">Agregar nueva entrada</button>
+            </div>
+        </form>
+
+
+
+    </div>
+</div>

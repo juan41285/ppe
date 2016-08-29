@@ -17,7 +17,7 @@
    		$window.location.href = 'http://ppeadmin.innovacioneducativa.gob.ar/';
    	}
    	if(user === '87654321'){
-   		$window.location.href = 'http://localhost:8082';
+   		$window.location.href = 'http://ppedm.innovacioneducativa.gob.ar/';
    	}
    }
     

@@ -7,14 +7,14 @@
 </div>
 
 <div class="col-md-2 dash-box" >
-    						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='fines'" ng-class="{ 'btn-danger' : menuAdmin == 'fines' }"  >
+    						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='fines'" ng-class="{ 'btn-primary' : menuAdmin == 'fines' }"  >
 								 <div class="fa fa fa-wpforms fa-3x"></div> 
 								<div id="box_2" class="icon-label"> Administrar <br> Fines</div>
 								
 							</a>
 						</div>
 				  <div class="col-md-2 dash-box">
-    						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='proyectos'" ng-class="{ 'btn-danger' : menuAdmin == 'proyectos' }"  >
+    						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='proyectos'" ng-class="{ 'btn-primary' : menuAdmin == 'proyectos' }"  >
 								 <div class="fa fa-cubes fa-3x"></div> 
 								<div id="box_2" class="icon-label">Administrar <br> Proyectos</div>
 								
@@ -24,7 +24,7 @@
 			
 
 			<div class="col-md-2 dash-box">
-    						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='acciones'" ng-class="{ 'btn-danger' : menuAdmin == 'acciones' }"  >
+    						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='acciones'" ng-class="{ 'btn-primary' : menuAdmin == 'acciones' }"  >
 								 <div class="fa fa-dot-circle-o fa-3x"></div> 
 								<div id="box_2" class="icon-label"> Administrar <br> Acciones</div>
 								
@@ -68,16 +68,16 @@
 </div>
 </div>
 <!-- ABM USUARIOS -->
-<div class="row" ng-switch-when="dm">
-	<div ng-controller="DirMinCtrl" ng-include="template.dm" scope="" onload=""></div>
+<div class="row" ng-switch-when="fines">
+	<div ng-controller="FinesCtrl" ng-include="template.fines" scope="" onload=""></div>
 </div>
 <!-- ABM USUARIOS -->
-<div class="row" ng-switch-when="usuarios">
-	<div ng-controller="UserCtrl" ng-include="template.users" scope="" onload=""></div>
+<div class="row" ng-switch-when="proyectos">
+	<div ng-controller="ProyectosCtrl" ng-include="template.proyectos" scope="" onload=""></div>
 </div>
 <!-- ABM EJES -->
-<div class="row" ng-switch-when="ejes">
-	<div ng-controller="EjesCtrl" ng-include="template.ejes" scope="" onload=""></div>
+<div class="row" ng-switch-when="acciones">
+	<div ng-controller="AccionesCtrl" ng-include="template.acciones" scope="" onload=""></div>
 </div>
 <!-- ABM OE -->
 <div class="row" ng-switch-when="estrategicos">

@@ -1,0 +1,82 @@
+<div class="col-md-4">
+	<h3 class="dm-h3 shadow-z-0">Agregar Fin</h3>
+
+	<div class="shadow-z-0 admin-content-form">
+	
+		<form class="row" ng-submit="guardarDireccion()">
+			<div class="form-group col-md-12">
+				<label for="direccion-nombre">Nombre</label>
+				<input type="text" name="direccion" ng-model="direccion.nombre" class="form-control" required>
+			</div>
+			
+			<div class="form-group col-md-12">
+            <label for="direccion-nombre">Objetivo Operativo al que pertenece</label>
+            <input type="text" name="direccion" ng-model="direccion.nombre" class="form-control" required>
+            </div>
+            <div >
+       <div class="form-group col-md-12">
+           <hr>
+       </div>
+        <div class="form-group col-md-12">
+                <label for="direccion-nombre">Direcciones que colaboran</label>
+                <div class="input-group">
+      <input type="text" class="form-control" placeholder="Seleccione con autcompletar...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Agregar</button>
+      </span>
+    </div><!-- /input-group -->
+            </div>
+           
+                </div>
+            
+			<div class="clearfix col-md-12">
+			<hr>
+				<button class="btn btn-danger pull-right"  type="submit">Guardar</button>
+			</div>
+		</form>
+
+
+
+	</div>
+</div>
+
+<div class="col-md-8">
+<h3 class="dm-h3 shadow-z-0">Listado de Fines Agregados</h3>
+
+	<div class="shadow-z-0 admin-content-form">
+	 <table class="table table-responsive table-condensed table-striped">
+                        <tr>
+                        	<th>Fin</th>
+                        	
+                        	<th class="td-actions text-right">Opciones</th>
+                        </tr>
+                        <tr>
+                        	<td>Fin #1</td>
+                        	
+                        	<td class="td-actions text-right">
+                
+                <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button>
+                <button type="button" rel="tooltip" title="Eliminar" class="btn btn-danger btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-times"></i>
+                </button>
+                        	</td>
+                        </tr>
+                        <tr>
+                        	<td>Fin #2</td>
+                        
+                        	<td class="td-actions text-right">
+          
+                <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button>
+                <button type="button" rel="tooltip" title="Eliminar" class="btn btn-danger btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-times"></i>
+                </button>
+                        	</td>
+                        </tr>
+    </table>
+	</div>
+	
+</div>  
