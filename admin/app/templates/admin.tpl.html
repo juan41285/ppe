@@ -22,7 +22,13 @@
 						</div>
 
 			
-
+  <div class="col-md-2 dash-box">
+    						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='planes'" ng-class="{ 'btn-danger' : menuAdmin == 'planes' }"  >
+								 <div class="fa fa-joomla fa-3x"></div> 
+								<div id="box_2" class="icon-label">Cargar <br> Plan</div>
+								
+							</a>
+						</div>
 			<div class="col-md-2 dash-box">
     						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='ejes'" ng-class="{ 'btn-danger' : menuAdmin == 'ejes' }"  >
 								 <div class="fa fa-list fa-3x"></div> 
@@ -47,7 +53,7 @@
 						</div>
 				</div>
 				</div>
-
+ 
 <div class="well" ng-switch="menuAdmin">
   <div class="row" ng-switch-when="resenia">
 <div class="col-md-12">
@@ -88,6 +94,10 @@
 <!-- ABM USUARIOS -->
 <div class="row" ng-switch-when="usuarios">
 	<div ng-controller="UserCtrl" ng-include="template.users" scope="" onload=""></div>
+</div>
+<!-- ABM Planes -->
+<div class="row" ng-switch-when="planes">
+	<div ng-controller="PlanesCtrl" ng-include="template.planes" scope="" onload=""></div>
 </div>
 <!-- ABM EJES -->
 <div class="row" ng-switch-when="ejes">
