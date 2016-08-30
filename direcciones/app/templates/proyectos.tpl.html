@@ -15,25 +15,33 @@
             </div>
             <div >
        <div class="form-group col-md-12">
+       <label for="direccion-nombre">Descripción</label>
+       <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
            <hr>
        </div>
         <div class="form-group col-md-12">
-                <label for="direccion-nombre">Responsables</label>
+                <label for="direccion-nombre">Colaboradores</label>
                 <div class="input-group">
-      <input type="text" class="form-control" placeholder="Seleccione con autcompletar...">
+      <input type="text" class="form-control" placeholder="Seleccione con autcompletar..." ng-model="colaborador" uib-typeahead="col for col in colaboradores | filter:$viewValue | limitTo:8" typeahead-on-select=""  autocomplete="off">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Agregar</button>
+        <button class="btn btn-default" type="button" ng-click="AddIntegrante(colaborador);colaborador = '';">Agregar</button>
       </span>
     </div><!-- /input-group -->
+    <ul ng-show="integrantes">
+        <li ng-repeat="integrante in integrantes">{{integrante}}</li>
+    </ul>
             </div>
             <div class="form-group col-md-12">
-                <label for="direccion-nombre">Indicador</label>
+                <label for="direccion-nombre">Indicadores</label>
                 <div class="input-group">
-      <input type="text" class="form-control" placeholder="Seleccione con autcompletar...">
+      <input type="text" class="form-control" placeholder="Seleccione con autcompletar..." ng-model="selected" uib-typeahead="state for state in states | filter:$viewValue | limitTo:8" autocomplete="off"> 
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Agregar</button>
+        <button class="btn btn-default" type="button" ng-click="AddIndicador(selected);selected = '';">Agregar</button>
       </span>
     </div><!-- /input-group -->
+     <ul ng-show="indicadores">
+        <li ng-repeat="indicador in indicadores">{{indicador}}</li>
+    </ul>
             </div>
                 </div>
             
