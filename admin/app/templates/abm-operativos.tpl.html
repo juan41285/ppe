@@ -13,25 +13,35 @@
 				<textarea name="desc-ejes" id="" cols="30" rows="3" class="form-control"></textarea>
 			</div>
 			<div class="form-group col-md-12">
-            <hr>
+            
             <label for="direccion-nombre">Objetivo Estratégico al que pertenece</label>
-            <input type="text" name="direccion" ng-model="direccion.nombre" class="form-control" required>
+            <input type="text" name="direccion" placeholder="Seleccione con autcompletar..." ng-model="selected.nombre" uib-typeahead="state for state in states | filter:$viewValue | limitTo:8" autocomplete="off" class="form-control" required>
             </div>
             <div >
        <div class="form-group col-md-12">
            <hr>
+           <h5>Indicadores</h5>
        </div>
             <div class="form-group col-md-6">
             <label for="">Vigencia</label>
-            <input type="date" class="form-control">
+            <input type="date" class="form-control" ng-model="indicador.fecha" required="">
                     </div>
                     <div class="form-group col-md-6">
             <label for="">Indicador</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" ng-model="indicador.nombre" required="">
                     </div>
                     <div class="form-group col-md-12">
             <label for="">Metas</label>
-           <textarea name="desc-ejes" id="" cols="30" rows="2" class="form-control"></textarea>
+           <textarea name="desc-ejes" id="" cols="30" rows="2" class="form-control" ng-model="indicador.metas" required=""></textarea>
+           <button class="btn" ng-click="AddIndicador(indicador)">Agregar Indicador</button>
+
+           <table class="table table-condensed table-striped table-bordered" ng-show="indicadores">
+               <tr ng-repeat="i in indicadores">
+                   <td>{{i.nombre}}</td>
+                   <td>{{i.fecha | date: 'dd-MM-yyyy'}}</td>
+                   <td>{{i.metas}}</td>
+               </tr>
+           </table>
                     </div>
                 </div>
             
