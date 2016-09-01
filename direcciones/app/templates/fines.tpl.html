@@ -8,7 +8,7 @@
 				<label for="direccion-nombre">Nombre</label>
 				<input type="text" name="direccion" ng-model="direccion.nombre" class="form-control" required>
 			</div>
-			
+	
 			<div class="form-group col-md-12">
             <label for="direccion-nombre">Objetivo Operativo al que pertenece</label>
             <input type="text" name="direccion" class="form-control" autocomplete="off" required placeholder="Seleccione con autcompletar..." ng-model="selected.nombre" uib-typeahead="state for state in states | filter:$viewValue | limitTo:8" typeahead-on-select="Mdes()">
@@ -16,11 +16,10 @@
                  {{selected.des}}
              </small>
             </div>
-            <div >
-     
-
-           
-                </div>
+        <div class="form-group col-md-12">
+                <label for="direccion-nombre">Descripción</label>
+                <textarea name="" id="" cols="30" rows="3" class="form-control" required=""></textarea>
+            </div>
             
 			<div class="clearfix col-md-12">
 			<hr>
