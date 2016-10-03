@@ -1,0 +1,96 @@
+<div class="container-fluid">
+	
+<div class="well">
+  <div class="row" ng-init="menuAdmin='resenia'">
+<div class="col-md-12">
+	<h4>Seleccione un opción para continuar</h4>
+</div>
+
+<div class="col-md-2 dash-box" >
+    						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='fines'" ng-class="{ 'btn-primary' : menuAdmin == 'fines' }"  >
+								 <div class="fa fa fa-wpforms fa-3x"></div> 
+								<div id="box_2" class="icon-label"> Administrar <br> Fines</div>
+								
+							</a>
+						</div>
+				  <div class="col-md-2 dash-box">
+    						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='proyectos'" ng-class="{ 'btn-primary' : menuAdmin == 'proyectos' }"  >
+								 <div class="fa fa-cubes fa-3x"></div> 
+								<div id="box_2" class="icon-label">Administrar <br> Proyectos</div>
+								
+							</a>
+						</div>
+
+			
+
+			<div class="col-md-2 dash-box">
+    						<a href="#" class="btn btn-fase-0-menu " role="button" ng-click="menuAdmin='acciones'" ng-class="{ 'btn-primary' : menuAdmin == 'acciones' }"  >
+								 <div class="fa fa-dot-circle-o fa-3x"></div> 
+								<div id="box_2" class="icon-label"> Administrar <br> Acciones</div>
+								
+							</a>
+						</div>
+
+				</div>
+				</div>
+
+<div class="well" ng-switch="menuAdmin">
+  <div class="row" ng-switch-when="resenia">
+<div class="col-md-12">
+	<ul class="list-unstyled admin-resenia">
+		
+		<li><span class="fa fa-bookmark"></span> <strong > Direciones Ministeriales</strong>: Desde esta opción se dan de alta las Direcciones Ministeriales que forman parte de la Estructura del Ministerio de Educación</li>
+		<li class="divider"><hr></li>
+		<li><span class="fa fa-user-plus"></span> <strong > Administrar Usuarios</strong>: Permite crear, editar y eliminar usuarios de sistema. <ul>
+			<li>Como cada usuario debe estar asociado a una Dirección o Área del ministerio, para poder crear el usuario, primero deberá existir dicha dirección o área</li>
+		</ul>  </li>
+		<li class="divider"><hr></li>
+		<li><span class="fa fa-list"></span> <strong > Definir Ejes</strong>: Modulo que permite la carga y definición de los ejes estratégicos sobre los cuales se trabajaran las planificaciones.
+	</li>
+		<li class="divider"><hr></li>
+		<li><span class="fa fa-object-ungroup"></span> <strong > Objetivos Estratégicos</strong>:Desde esta opción se realiza la carga de los objetivos estratégicos sobre los que se hará hincapié en las planificaciones.
+				<ul>
+				<li>
+					Los objetivos estratégicos estan vinculados a un eje. Por lo tanto para realizar la carga de un objetivo estratégico es necesario que previamente se haya cargado el eje sobre el que se apoya el mismo.
+				</li>
+		</ul>
+		</li>
+	<li class="divider"><hr></li>
+		<li><span class="fa fa-object-group"></span> <strong > Objetivos Operativos</strong>:Desde esta opción se realiza la carga de los objetivos estratégicos sobre los que se hará hincapié en las planificaciones.
+				<ul>
+				<li>
+					Para cargar los objetivos operativos primero deberá cargar los objetivos estratégicos relacionados.
+				</li>
+		</ul>
+		</li>
+
+	</ul>
+</div>
+</div>
+<!-- ABM USUARIOS -->
+<div class="row" ng-switch-when="fines">
+	<div ng-controller="FinesCtrl" ng-include="template.fines" scope="" onload=""></div>
+</div>
+<!-- ABM USUARIOS -->
+<div class="row" ng-switch-when="proyectos">
+	<div ng-controller="ProyectoCtrl" ng-include="template.proyectos" scope="" onload=""></div>
+</div>
+<!-- ABM EJES -->
+<div class="row" ng-switch-when="acciones">
+	<div ng-controller="AccionesCtrl" ng-include="template.acciones" scope="" onload=""></div>
+</div>
+<!-- ABM OE -->
+<div class="row" ng-switch-when="estrategicos">
+	<div ng-controller="EstrategicosCtrl" ng-include="template.estrategicos" scope="" onload="">
+		
+</div>
+</div>
+<!-- ABM OO -->
+<div class="row" ng-switch-when="operativos">
+	<div ng-controller="OperativosCtrl" ng-include="template.operativos" >
+		
+</div>
+</div>
+</div>
+
+	</div>

@@ -23,6 +23,7 @@ naranja = #303F9F
 body 
   background: #f1f1f1
   font-size: 16px
+  font-family: 'Roboto Condensed', sans-serif
 
 
 .bg-header
@@ -417,6 +418,35 @@ li.user-name
   color:detalle
   border-bottom:1px solid detalle
 /* admin menu */
+.dm-h3 
+  font-size: 18px
+  margin:0
+  padding: 8px
+  background: white
+  color:#F44336
+  border-bottom:1px solid #F44336
+.admin-content-form
+  padding: 10px
+  background: #fff
+  
+  & input 
+     background: #fff !important
+  & label
+     color: #000 !important
+  & small
+     font-size: 12px
+  & table
+     font-size: 0.8em
+
+     
+.form-inset
+  background: #e0e0e0
+  padding:2px
+  border:1px solid #ddd
+   
+.admin-resenia
+  font-size: 14px
+  padding: 10px
 .btn-fase-0
   background-color: #F44336;
   color: #FFFFFF;
@@ -580,7 +610,6 @@ label .additional,
   left: 0;
   right: auto;
 }
-
 /*.has-success .form-control { border-color: #0ac964; }
 .has-success .form-control-feedback { color: #0ac964; }
 .has-warning .form-control { border-color: #c19716; }
@@ -607,4 +636,21 @@ label .additional,
 .fa-3x:before{
   font-size: 28px;
   padding:10px;
+}
+
+.card-signup .header {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    margin-left: -15px;
+    /* margin-right: 20px; */
+    margin-top: -30px;
+    /* padding: 20px 0; */
+    width: 110%;
+}
+
+.login-error{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  background:#F44336;
+  color:white;
 }

@@ -3,15 +3,13 @@
 
   // /* @ngInject */
   angular
-    .module('ppe', ['ngRoute','ppe.controllers','ppe.directives','ppe.templates','ui.bootstrap','ngAnimate','ngTouch'])
+    .module('ppe', ['ngRoute','ppe.controllers','ppe.directives','ppe.templates','ppe.services', 'ui.bootstrap','ngAnimate','ngTouch'])
     .config(config);
 
 
  
   function config ($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);
-     $.material.init();
-
 
     $routeProvider
       .when('/', {
@@ -19,41 +17,50 @@
         controller: 'LoginCtrl',
         controllerAs: 'login'
       })
-    .when('/admin/', {
-        templateUrl: 'templates/admin/admin-home.tpl.html',
+    .when('/admin', {
+        templateUrl: 'templates/admin/home.tpl.html',
         controller: 'AdminCtrl',
-        controllerAs: 'admin',
         activeMenu: 'admin'
 
       })
-      .when('/planificacion', {
-        templateUrl: 'templates/planificacion.tpl.html',
-        controller: 'PlanificacionCtrl',
-        controllerAs: 'plan',
+
+     .when('/admin/planificacion', {
+        templateUrl: 'templates/admin/planificacion.tpl.html',
+        controller: 'ProyectosCtrl',
         activeMenu: 'planificacion'
       })
-    .when('/seguimiento', {
-        templateUrl: 'templates/seguimiento.tpl.html',
-        controller: 'SeguimientoCtrl',
-        controllerAs: 'seg',
-        activeMenu: 'seguimiento'
+    .when('/admin/seguimiento', {
+        templateUrl: 'templates/admin/seguimiento.tpl.html',
+        controller: 'ProyectosCtrl',
+        activeMenu: 'seguimiento' 
       })
 
-      .when('/instituciones', {
-        templateUrl: 'templates/instituciones.tpl.html',
-        controller: 'InstitucionesCtrl',
-        controllerAs: 'ins',
+      .when('/admin/instituciones', {
+        templateUrl: 'templates/admin/instituciones.tpl.html',
+        controller: 'DirMinCtrl',
         activeMenu: 'instituciones'
       })
-       .when('/estadisticas', {
-        templateUrl: 'templates/estadisticas.tpl.html',
+       .when('/admin/estadisticas', {
+        templateUrl: 'templates/admin/estadisticas.tpl.html',
         activeMenu: 'estadisticas'
       })
-
-      .when('/auxiliar', {
-        templateUrl: 'templates/check.tpl.html'
+       .when('/admin/area-de-carga', {
+        templateUrl: 'templates/admin/admin.tpl.html',
+        activeMenu: 'carga'
       })
+// direcciones
+       .when('/direccion', {
+        templateUrl: 'templates/direcciones/home.tpl.html',
+        controller: 'DireccionCtrl',
+        activeMenu: 'direccion'
 
+      })
+       .when('/direccion/admin', {
+        templateUrl: 'templates/direcciones/admin.tpl.html',
+        // controller: 'DireccionCtrl',
+        activeMenu: 'carga'
+
+      })
       .otherwise({ reditrectTo : "/" });
   }
 

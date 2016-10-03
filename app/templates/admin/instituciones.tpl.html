@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="row">
+		 <div class="col-md-12">
+                    <h3 class="seg-h3 shadow-z-0">Listado de Instituciones</h3>
+                    <div class="seg shadow-z-0">
+                        <table class="table table-responNormalve table-condensed table-striped">
+                        <tr>
+                        	<th>Nombre</th>
+                        	<th>Proyectos</th>
+                        	<th>Participantes</th>
+                        	<th>% Cumplimiento</th>
+                 
+                        	<th>Seguimiento</th>
+                        	<th>Opciones</th>
+                        </tr>
+                            <tr ng-repeat="direccion in direcciones">
+                               
+                                <td>{{direccion.nombre}}</td>
+                                 <td><span class="badge iniciado td-estado">10</span></td>
+                                <td><span class="badge finalizado td-estado">4</span></td>
+                                <td><span class="badge proceso td-estado">15 %</span></td>
+                                
+                                <td><strong>Normal</strong></td>
+                               
+
+                                <td>
+                                <a href="#" class="btn btn-mini btn-primary">detalles</a>
+                                </td>
+                            </tr>
+                              
+                        </table>
+                    </div>
+	</div>
+</div>

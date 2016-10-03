@@ -45,6 +45,7 @@
     <!-- endinject -->
    
     <!-- endbuild -->    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
        <!--[if lt IE 8]>
  <p class="browsehappy">
  Estás usando un navegador <strong>desactualizado</s
@@ -59,6 +60,14 @@ III. Anatomía de una aplicación AngularJS.
 
  
   <body > 
+    <div ng-controller="MenuCtrl" ng-show="menuToggle" >
+      <div ng-show="menuToggle == 1">
+          <div ng-include="template.admin" scope="" onload=""></div>
+      </div>
+     <div ng-show="menuToggle == 2">
+          <div ng-include="template.direccion" scope="" onload=""></div>
+      </div>
+  </div>
   <div ng-view></div>
  
  
@@ -81,11 +90,27 @@ III. Anatomía de una aplicación AngularJS.
     <!-- build:js js/app.min.js -->
     <!-- inject:js -->
     <script src="/scripts/controllers.js"></script>
+    <script src="/scripts/direcciones/controllers/SidebarCtrl.js"></script>
+    <script src="/scripts/direcciones/controllers/ProyectoCtrl.js"></script>
+    <script src="/scripts/direcciones/controllers/PlanificacionCtrl.js"></script>
+    <script src="/scripts/direcciones/controllers/HomeCtrl.js"></script>
+    <script src="/scripts/direcciones/controllers/FinesCtrl.js"></script>
+    <script src="/scripts/direcciones/controllers/DireccionCtrl.js"></script>
+    <script src="/scripts/direcciones/controllers/AccionesCtrl.js"></script>
+    <script src="/scripts/admin/controllers/UserCtrl.js"></script>
+    <script src="/scripts/admin/controllers/SidebarCtrl.js"></script>
+    <script src="/scripts/admin/controllers/ProyectosCtrl.js"></script>
+    <script src="/scripts/admin/controllers/PlanesCtrl.js"></script>
+    <script src="/scripts/admin/controllers/OperativosCtrl.js"></script>
+    <script src="/scripts/admin/controllers/EstrategicosCtrl.js"></script>
+    <script src="/scripts/admin/controllers/EjesCtrl.js"></script>
+    <script src="/scripts/admin/controllers/DirMinCtrl.js"></script>
+    <script src="/scripts/admin/controllers/AdminCtrl.js"></script>
     <script src="/scripts/controllers/SidebarCtrl.js"></script>
-    <script src="/scripts/controllers/PlanificacionCtrl.js"></script>
     <script src="/scripts/controllers/MenuCtrl.js"></script>
     <script src="/scripts/controllers/LoginCtrl.js"></script>
-    <script src="/scripts/controllers/AdminCtrl.js"></script>
+    <script src="/scripts/services.js"></script>
+    <script src="/scripts/admin/services.js"></script>
     <script src="/scripts/templates.js"></script>
     <script src="/scripts/nouislider.min.js"></script>
     <script src="/scripts/material.min.js"></script>

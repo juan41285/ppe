@@ -1,0 +1,117 @@
+<div class="col-md-4">
+	<h3 class="dm-h3 shadow-z-0">Agregar Objetivo Estratégico</h3>
+
+	<div class="shadow-z-0 admin-content-form">
+	
+		<form class="row" ng-submit="guardarDireccion()">
+			<div class="form-group col-md-12">
+				<label for="direccion-nombre">Nombre del Objetivo</label>
+				<input type="text" name="direccion" ng-model="direccion.nombre" class="form-control" required>
+			</div>
+			<div class="form-group col-md-12">
+				<label for="direccion-nombre">Descripción</label>
+				<textarea name="desc-ejes" id="" cols="30" rows="3" class="form-control"></textarea>
+			</div>
+			<div class="form-group col-md-12">
+            <hr>
+            <label for="direccion-nombre">Eje al que pertenece</label>
+            <div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios">
+        Eje #1
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" checked="true">
+        Eje #2
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" checked="true">
+        Eje #3
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" checked="true">
+        Eje #4
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" checked="true">
+        Eje #5
+    </label>
+</div>
+            </div>
+            <div >
+       <div class="form-group col-md-12">
+           <hr>
+           <h5>Indicadores</h5>
+       </div>
+            <div class="form-group col-md-6">
+            <label for="">Vigencia</label>
+            <input type="date" class="form-control" ng-model="indicador.fecha" required="">
+                    </div>
+                    <div class="form-group col-md-6">
+            <label for="">Indicador</label>
+            <input type="text" class="form-control" ng-model="indicador.nombre" required="">
+                    </div>
+                    <div class="form-group col-md-12">
+            <label for="">Metas</label>
+           <textarea name="desc-ejes" id="" cols="30" rows="2" class="form-control" ng-model="indicador.metas" required=""></textarea>
+           <button class="btn" ng-click="AddIndicador(indicador)">Agregar Indicador</button>
+
+           <table class="table table-condensed table-striped table-bordered" ng-show="indicadores">
+               <tr ng-repeat="i in indicadores">
+                   <td>{{i.nombre}}</td>
+                   <td>{{i.fecha | date: 'dd-MM-yyyy'}}</td>
+                   <td>{{i.metas}}</td>
+               </tr>
+           </table>
+                    </div>
+                </div>
+            
+			<div class="clearfix col-md-12">
+			<hr>
+				<button class="btn btn-danger pull-right"  type="submit">Guardar</button>
+			</div>
+		</form>
+
+
+
+	</div>
+</div>
+
+<div class="col-md-8">
+<h3 class="dm-h3 shadow-z-0">Listado de Objetivos Estratégicos</h3>
+
+	<div class="shadow-z-0 admin-content-form">
+	 <table class="table table-responsive table-condensed table-striped">
+                        <tr>
+                        	<th>Objetivo</th>
+                        	
+                        	<th class="td-actions text-right">Opciones</th>
+                        </tr>
+                        <tr ng-repeat="obj in estrategicos">
+                        	<td>{{obj.nombre}}</td>
+                        	
+                        	<td class="td-actions text-right">
+                <button type="button" rel="tooltip" title="Agregar objetivo Operativo" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-object-group"></i>
+                </button>
+                <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button>
+                <button type="button" rel="tooltip" title="Eliminar" class="btn btn-danger btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-times"></i>
+                </button>
+                        	</td>
+                        </tr>
+
+    </table>
+	</div>
+	
+</div>  

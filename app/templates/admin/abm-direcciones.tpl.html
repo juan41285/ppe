@@ -1,0 +1,75 @@
+<div class="col-md-4">
+	<h3 class="dm-h3 shadow-z-0">Agregar Dirección Ministerial</h3>
+
+	<div class="shadow-z-0 admin-content-form">
+	
+		<form class="row" ng-submit="guardarDireccion()">
+			<div class="form-group col-md-12">
+				<label for="direccion-nombre">Nombre de la Dirección</label>
+				<input type="text" name="direccion" ng-model="direccion.datos.nombre" class="form-control" required>
+			</div>
+			<div class="form-group col-md-12">
+				<label for="direccion-nombre">E-mail de la Dirección</label>
+				<input type="email" name="dirmail" ng-model="direccion.datos.correo" class="form-control" required>
+			</div>
+			<small class="col-md-12">
+			<strong>Datos del Responsable</strong>
+			
+			</small>
+			<div class="form-group col-md-7">
+				<label for="direccion-nombre">DNI <small>(sin puntos)</small></label>
+				<input type="text" name="dni" ng-model="direccion.responsable.dni" class="form-control" required>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="direccion-nombre">Apellido</label>
+				<input type="text" name="apellido" ng-model="direccion.responsable.apellido" class="form-control" required>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="direccion-nombre">Nombres</label>
+				<input type="text" name="nombre" ng-model="direccion.responsable.nombre" class="form-control" required>
+			</div>
+			
+			<div class="form-group col-md-12">
+				<label for="direccion-nombre">Email</label>
+				<input type="email" name="correo" ng-model="direccion.responsable.correo" class="form-control" required>
+
+			</div>
+			<div class="clearfix col-md-12">
+			<hr>
+				<button class="btn btn-danger pull-right"  type="submit">Guardar</button>
+			</div>
+		</form>
+
+
+
+	</div>
+</div>
+
+<div class="col-md-8">
+<h3 class="dm-h3 shadow-z-0">Listado de Direcciones Agregadas</h3>
+
+	<div class="shadow-z-0 admin-content-form">
+	 <table class="table table-responsive table-condensed table-striped">
+                        <tr>
+                        	<th>Dirección</th>
+                        	<th>Responsable</th>
+                        	<th class="td-actions text-right">Opciones</th>
+                        </tr>
+                        <tr ng-repeat="dir in direcciones">
+                        	<td>{{dir.nombre}}</td>
+                        	<td>{{dir.apellido}}, {{dir.Nombre}}</td>
+                        	<td class="td-actions text-right">
+                
+                <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-edit"></i>
+                </button>
+                <button type="button" rel="tooltip" title="Eliminar" class="btn btn-danger btn-simple btn-xs" style="margin-top: -3px;">
+                    <i class="fa fa-times"></i>
+                </button>
+                        	</td>
+                        </tr>
+                        
+    </table>
+	</div>
+	
+</div>  

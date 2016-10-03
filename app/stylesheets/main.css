@@ -1,6 +1,7 @@
 body {
   background: #f1f1f1;
   font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .bg-header {
   background: #fff;
@@ -378,6 +379,39 @@ li.user-name {
   border-bottom: 1px solid #9c27b0;
 }
 /* admin menu */
+.dm-h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 8px;
+  background: #fff;
+  color: #f44336;
+  border-bottom: 1px solid #f44336;
+}
+.admin-content-form {
+  padding: 10px;
+  background: #fff;
+}
+.admin-content-form input {
+  background: #fff !important;
+}
+.admin-content-form label {
+  color: #000 !important;
+}
+.admin-content-form small {
+  font-size: 12px;
+}
+.admin-content-form table {
+  font-size: 0.8em;
+}
+.form-inset {
+  background: #e0e0e0;
+  padding: 2px;
+  border: 1px solid #ddd;
+}
+.admin-resenia {
+  font-size: 14px;
+  padding: 10px;
+}
 .btn-fase-0 {
   background-color: #f44336;
   color: #fff;
@@ -603,4 +637,19 @@ label .additional,
 .fa-3x:before {
   font-size: 28px;
   padding: 10px;
+}
+.card-signup .header {
+  box-shadow: 0 16px 38px -12px rgba(0,0,0,0.56), 0 4px 25px 0px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.2);
+  margin-left: -15px;
+/* margin-right: 20px; */
+  margin-top: -30px;
+/* padding: 20px 0; */
+  width: 110%;
+}
+.login-error {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  background: #f44336;
+  color: #fff;
 }
